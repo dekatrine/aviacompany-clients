@@ -149,7 +149,7 @@ print(null_percentages)
 ```
 Defining the target column and the features:
 ```
-y = df['Flight Distance']
+y = df['satisfaction']
 X.head()
 ```
 Splitting on train and test sets - checking out the dimension.
@@ -226,7 +226,7 @@ X_test= st_X.transform(X_test)
 ```
 ```
 X = df.drop(['Departure/Arrival time convenient', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction', 'Gender'], axis=1)
-y = df['Departure/Arrival time convenient']
+y = df['satisfaction']
 X.head()
 from sklearn import preprocessing
 from sklearn import utils
